@@ -53,6 +53,7 @@ import org.robovm.apple.corelocation.*;
     public UIView() {}
     protected UIView(long handle) { super(handle); }
     protected UIView(SkipInit skipInit) { super(skipInit); }
+    protected UIView(NSObject.Handle h, long handle){ super(h, handle); }
     public UIView(@ByVal CGRect frame) { super((SkipInit) null); initObject(init(frame)); }
     public UIView(NSCoder aDecoder) { super((SkipInit) null); initObject(init(aDecoder)); }
     /*</constructors>*/

@@ -52,6 +52,7 @@ import org.robovm.apple.corelocation.*;
     /*<constructors>*/
     public UIButton() {}
     protected UIButton(SkipInit skipInit) { super(skipInit); }
+    protected UIButton(Handle h, long handle) { super(h, handle); }
     public UIButton(UIButtonType buttonType) { super(create0(buttonType)); retain(getHandle()); }
     /*</constructors>*/
     public UIButton(CGRect frame) {

@@ -57,7 +57,8 @@ import org.robovm.apple.dispatch.*;
 
     public static final int FLAG_NO_RETAIN = 0x1;
     
-    protected static class SkipInit {}
+    protected static class SkipInit {}    
+    protected static class Handle {}
 
     /*<ptr>*/public static class NSObjectPtr extends Ptr<NSObject, NSObjectPtr> {}/*</ptr>*/
     
@@ -121,6 +122,10 @@ import org.robovm.apple.dispatch.*;
     }
     
     protected NSObject(SkipInit skipInit) {
+    }
+    
+    protected NSObject(Handle h, long handle) {
+       super(handle);
     }
     
     /*<constructors>*/

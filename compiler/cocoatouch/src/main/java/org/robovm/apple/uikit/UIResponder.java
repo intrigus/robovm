@@ -53,6 +53,7 @@ import org.robovm.apple.corelocation.*;
     public UIResponder() {}
     protected UIResponder(long handle) { super(handle); }
     protected UIResponder(SkipInit skipInit) { super(skipInit); }
+    protected UIResponder(NSObject.Handle h, long handle){ super(h, handle); }
     /*</constructors>*/
     /*<properties>*/
     /**

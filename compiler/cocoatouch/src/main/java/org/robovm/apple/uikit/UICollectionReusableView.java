@@ -51,6 +51,7 @@ import org.robovm.apple.corelocation.*;
     /*<constants>*//*</constants>*/
     /*<constructors>*/
     public UICollectionReusableView() {}
+    protected UICollectionReusableView(Handle h, long handle) { super(h, handle); }
     protected UICollectionReusableView(SkipInit skipInit) { super(skipInit); }
     /*</constructors>*/
     

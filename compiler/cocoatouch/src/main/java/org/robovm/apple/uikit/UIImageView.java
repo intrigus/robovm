@@ -52,6 +52,7 @@ import org.robovm.apple.corelocation.*;
     /*<constructors>*/
     public UIImageView() {}
     protected UIImageView(SkipInit skipInit) { super(skipInit); }
+    protected UIImageView(Handle h, long handle) { super(h, handle); }
     public UIImageView(UIImage image) { super((SkipInit) null); initObject(init(image)); }
     /**
      * @since Available in iOS 3.0 and later.

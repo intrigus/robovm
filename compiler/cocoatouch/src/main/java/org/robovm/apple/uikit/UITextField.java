@@ -79,6 +79,7 @@ import org.robovm.apple.coremedia.CMTextMarkupAttributes;
     /*<constants>*//*</constants>*/
     /*<constructors>*/
     public UITextField() {}
+    protected UITextField(Handle h, long handle) { super(h, handle); }
     protected UITextField(SkipInit skipInit) { super(skipInit); }
     /*</constructors>*/
     

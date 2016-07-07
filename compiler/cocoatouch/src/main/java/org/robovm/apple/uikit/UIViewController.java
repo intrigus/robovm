@@ -68,6 +68,7 @@ import org.robovm.apple.mediaplayer.MPMoviePlayerViewController;
     /*<constructors>*/
     public UIViewController() {}
     protected UIViewController(long handle) { super(handle); }
+    protected UIViewController(NSObject.Handle h, long handle){ super(h, handle); }
     protected UIViewController(SkipInit skipInit) { super(skipInit); }
     public UIViewController(String nibNameOrNil, NSBundle nibBundleOrNil) { super((SkipInit) null); initObject(init(nibNameOrNil, nibBundleOrNil)); }
     public UIViewController(NSCoder aDecoder) { super((SkipInit) null); initObject(init(aDecoder)); }

@@ -51,6 +51,7 @@ import org.robovm.apple.corelocation.*;
     /*<constants>*//*</constants>*/
     /*<constructors>*/
     public UITableViewController() {}
+    protected UITableViewController(Handle h, long handle) { super(h, handle); }
     protected UITableViewController(SkipInit skipInit) { super(skipInit); }
     public UITableViewController(UITableViewStyle style) { super((SkipInit) null); initObject(init(style)); }
     public UITableViewController(String nibNameOrNil, NSBundle nibBundleOrNil) { super((SkipInit) null); initObject(init(nibNameOrNil, nibBundleOrNil)); }

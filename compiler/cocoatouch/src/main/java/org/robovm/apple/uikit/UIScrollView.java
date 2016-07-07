@@ -51,6 +51,7 @@ import org.robovm.apple.corelocation.*;
     /*<constants>*//*</constants>*/
     /*<constructors>*/
     public UIScrollView() {}
+    protected UIScrollView(Handle h, long handle) { super(h, handle); }
     protected UIScrollView(SkipInit skipInit) { super(skipInit); }
     /*</constructors>*/
     

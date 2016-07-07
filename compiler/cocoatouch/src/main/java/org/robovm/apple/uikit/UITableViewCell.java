@@ -51,6 +51,7 @@ import org.robovm.apple.corelocation.*;
     /*<constants>*//*</constants>*/
     /*<constructors>*/
     public UITableViewCell() {}
+    protected UITableViewCell(Handle h, long handle) { super(h, handle); }
     protected UITableViewCell(SkipInit skipInit) { super(skipInit); }
     /**
      * @since Available in iOS 3.0 and later.
